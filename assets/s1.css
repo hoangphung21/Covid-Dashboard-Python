@@ -550,6 +550,10 @@
     .seven.columns {
       width: calc(100% * 7 / 12);
     }
+    #covid-image{
+        margin-bottom: 0px !important;
+        height: 45px !important;
+    }
   }
   
   /* Larger than tablet, for screens smaller than 768px */

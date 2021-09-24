@@ -59,8 +59,16 @@ covid_data['active'] = covid_data['confirmed'] - covid_data['deaths'] - covid_da
 app = dash.Dash(__name__, )
 
 app.layout = html.Div([
-    
-])
+    html.Div([
+        html.Div([
+            html.Img(src=app.get_asset_url('covidlogo.png'),
+            id='covid-image',
+            style={'height':'60px',
+                    'withd':'auto',
+                    'margin-bottom':'25px'})
+        ], className='one-third')
+    ], id='header', className='row flex-display',style={'margin-bottom':'25px'})
+], id = 'mainContainer', style={'display':'flex', 'flex-direction':'column'})
 
 if __name__ == '__main__':
     app.run_server(debug=True)
