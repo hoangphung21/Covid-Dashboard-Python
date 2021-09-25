@@ -526,7 +526,7 @@
   @media (min-width: 400px) {
   }
   
-  /* Larger than phablet (also point when grid becomes active), screen larger than 550px */
+  /* Larger than tablet (also point when grid becomes active), screen larger than 550px */
   @media (min-width: 550px) {
     .one.column,
     .one.columns {
@@ -554,6 +554,10 @@
         margin-bottom: 0px !important;
         height: 45px !important;
     }
+    #title{
+        margin-bottom: 10px;
+    }
+
   }
   
   /* Larger than tablet, for screens smaller than 768px */
